@@ -238,7 +238,7 @@ export const HouseBox = (props) => {
                 </Link>
                 <div className="desc">
                     <span>{data.area}㎡ | {data.floor}/{data.totalFloor}层 </span>
-                    <span className="price"><span className="number">{data.price}</span> <span className="unit">/月</span></span>
+                    <span className="price"><span className="number">{data.price}</span> <span className="unit"> 万</span></span>
                 </div>
                 <div className="location"><i className="iconfont" style={{fontSize: "12px"}}>&#xe620;</i>{data.houseDetail?.address}</div>
                 <div className="tag">

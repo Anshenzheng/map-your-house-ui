@@ -305,12 +305,12 @@ const SearchFilter = (props) => {
                 </Col>
         <Col span={22} className="option">
           <OptionSpanRadioGroup value={searchParams.rentWay} onChange={value => onChange({ rentWay: value })}>
-            <OptionSpanRadio value={0}>合租</OptionSpanRadio>
-            <OptionSpanRadio value={1}>整租</OptionSpanRadio>
+            <OptionSpanRadio value={0}>二手房</OptionSpanRadio>
+            <OptionSpanRadio value={1}>新房</OptionSpanRadio>
           </OptionSpanRadioGroup>
         </Col>
         <Col span={2} className="title">
-          租金
+          总价
                 </Col>
         <Col span={22} className="option">
           <OptionSpanRadioGroup value={priceType === 1 && (searchParams.priceMin + "-" + searchParams.priceMax)} onChange={value => {
@@ -326,12 +326,12 @@ const SearchFilter = (props) => {
               setPriceMaxInput(null);
             }
           }}>
-            <OptionSpanRadio value="0-1000">1000元以下</OptionSpanRadio>
-            <OptionSpanRadio value="1000-2000">1000-2000元</OptionSpanRadio>
-            <OptionSpanRadio value="2000-3000">2000-3000元</OptionSpanRadio>
-            <OptionSpanRadio value="3000-4000">3000-4000元</OptionSpanRadio>
-            <OptionSpanRadio value="4000-5000">4000-5000元</OptionSpanRadio>
-            <OptionSpanRadio value="5000-6000">5000-6000元</OptionSpanRadio>
+            <OptionSpanRadio value="0-3000000">300万以内</OptionSpanRadio>
+            <OptionSpanRadio value="3000000-4000000">300-400万</OptionSpanRadio>
+            <OptionSpanRadio value="4000000-5000000">400-500万</OptionSpanRadio>
+            <OptionSpanRadio value="5000000-8000000">500-800万</OptionSpanRadio>
+            <OptionSpanRadio value="8000000-10000000">800-1000万</OptionSpanRadio>
+            <OptionSpanRadio value="10000000+">1000万以上</OptionSpanRadio>
           </OptionSpanRadioGroup>
           <OptionSpan>
             <NumericInput style={{ width: 55, height: 22, borderRadius: 0 }} value={priceMinInput} onChange={setPriceMinInput} />

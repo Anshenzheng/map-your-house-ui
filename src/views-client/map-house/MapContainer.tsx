@@ -180,7 +180,7 @@ const MapContainer = ({onBoundsChange, childRef, houseList}) => {
         list.forEach((house: any) => {
             if(house.location){
                 const point = new BMap.Point(house.location?.lon, house.location?.lat);
-                const content = `<div class="house-marker-content"><span class="title">${house.title}</span><span>￥${house.price}/月</span> <b/></div>`;
+                const content = `<div class="house-marker-content"><span class="title">${house.title}</span><span>￥${house.price} 万</span> <b/></div>`;
                 const label = new BMap.Label(content, {
                     position: point,
                 });

@@ -39,7 +39,7 @@ const MapHouseList = ({ orderBy, sortDirection, onSortChange, houseData, onArriv
                       <h3>{item.title}</h3>
                       <div className="desc">
                         <span className="floor">{item.area}㎡ | {item.floor}/{item.totalFloor}层</span>
-                        <span className="price"><span className="number">¥{item.price}</span>/月</span>
+                        <span className="price"><span className="number">¥{item.price}</span> 万</span>
                       </div>
                       <div className="position">
                         <i className="iconfont" style={{ fontSize: "12px", fontWeight: "bold" }}>&#xe620;</i> {item.houseDetail.address}
