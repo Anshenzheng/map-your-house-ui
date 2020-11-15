@@ -18,7 +18,7 @@ const menuItemsMap = {
     },
     "/user/house-publish": {
         key: "/user/house-publish",
-        name: "我要出租",
+        name: "我要出售",
         to: "/user/house-publish",
         icon: <PlusSquareOutlined/>,
     },

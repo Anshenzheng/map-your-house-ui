@@ -45,7 +45,7 @@ const HouseNavigation = () => {
                         <Link href="#components-anchor-house-introduction_0" title="房源简介"/>
                     </div>
                     <div ref={ref => refArray[1] = ref} className="anchor-item-container">
-                        <Link href="#components-anchor-rent-info_1" title="租约信息"/>
+                        <Link href="#components-anchor-rent-info_1" title="签约信息"/>
                     </div>
                     <div ref={ref => refArray[2] = ref} className="anchor-item-container">
                         <Link href="#components-anchor-roommate-info_2" title="室友信息"/>

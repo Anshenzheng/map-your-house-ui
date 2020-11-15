@@ -71,7 +71,7 @@ const RightHouseAdminSideFix = ({isSticky}) => {
                         isSticky &&
                         <>
                             <div className="title">{houseInfo.title}</div>
-                            <div className="price" style={{marginBottom: 20}}><span className="icon">￥</span><span className="number">{houseInfo.price} </span>/月（季付价）</div>
+                            <div className="price" style={{marginBottom: 20}}><span className="icon">￥</span><span className="number">{houseInfo.price} </span>/万</div>
                         </>
                     }
                     <Button type="primary" style={{width: "100%", height: "46px", borderRadius: "2px"}} onClick={handleHouseClick}>
@@ -93,9 +93,9 @@ const RightHouseAdminSideFix = ({isSticky}) => {
                     qrCodeVisible &&
                     <div className="qrcode">
                         <div className="close" onClick={() => seQrCodetVisible(false)}><CloseOutlined/></div>
-                        <div className="code"> <img src="//static8.ziroom.com/phoenix/pc/images/qrcode/2019/PC_info.png" alt="自如app"/></div>
+                        <div className="code"> <img src="//static8.ziroom.com/phoenix/pc/images/qrcode/2019/PC_info.png" alt="我居app"/></div>
                         <div className="content">
-                            <p>扫码下载自如APP</p>
+                            <p>扫码下载我居APP</p>
                             <p>即时接收房源优惠及订阅信息～</p>
                         </div>
                     </div>

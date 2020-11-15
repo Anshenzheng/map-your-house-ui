@@ -221,7 +221,7 @@ const ReserveManage = () => {
                         </div>
                     </div>
                     <p className="tip">
-                        温馨提示：为保障您的租住权益以及财产安全，请务必通过管家与自如签订房屋租赁合同。
+                        温馨提示：为保障您的购房权益以及财产安全，请务必通过管家与Map Your House签订房屋购买合同。
                     </p>
                 </ModalBodyContainer>
             </Modal>

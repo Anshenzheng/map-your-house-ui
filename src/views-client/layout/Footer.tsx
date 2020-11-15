@@ -67,7 +67,7 @@ const Footer = () => {
                             </div>
                             <div className="swiper-slide">
                                 <a rel="noopener noreferrer"  target="_blank" href="http://hz.ziroom.com/?utm_source=pinzhuan&utm_medium=baidu&utm_term=&utm_content=biaoti">参考网站</a>
-                                <a rel="noopener noreferrer"  target="_blank" href="http://hz.ziroom.com/?utm_source=pinzhuan&utm_medium=baidu&utm_term=&utm_content=biaoti">自如官网</a>
+                                <a rel="noopener noreferrer"  target="_blank" href="http://hz.ziroom.com/?utm_source=pinzhuan&utm_medium=baidu&utm_term=&utm_content=biaoti">我居官网</a>
                                 <a rel="noopener noreferrer"  target="_blank" href="https://hz.58.com/?utm_source=market&spm=u-2d2yxv86y3v43nkddh1.BDPCPZ_BT">58同城</a>
                                 <a rel="noopener noreferrer"  target="_blank" href="https://hz.fang.com/">房天下</a>
                             </div>
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>本站信息数据非真实数据,界面风格主要借鉴自如网.如有涉及侵权,请加右上方微信联系我</p>
+                    <p>本站信息数据非真实数据,界面风格主要借鉴我居网.如有涉及侵权,请加右上方微信联系我</p>
                     <p>京ICP备19043967号-2</p>
                 </div>
             </div>

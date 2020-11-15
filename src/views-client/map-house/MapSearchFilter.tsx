@@ -15,7 +15,7 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
 
     return (
         <Container>
-            <FilterItemComponent value={searchParams.rentWay} name={rentWayItems.find(item => item.value === searchParams.rentWay)?.title || "合租整租"}
+            <FilterItemComponent value={searchParams.rentWay} name={rentWayItems.find(item => item.value === searchParams.rentWay)?.title || "房屋类型"}
                                  items={rentWayItems} onSelect={(params) =>onChange({rentWay: params.key}) }
             />
             <FilterItemComponent value={searchParams.priceRange} name={priceItems.find(item => item.value === searchParams.priceRange)?.title || "价格"} items={priceItems} onSelect={(params) => {
@@ -37,15 +37,14 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
     )
 };
 // 合租方式下拉项
-const rentWayItems = [{value: "null", title: "不限"}, {value: "0", title: "合租"}, {value: "1", title: "整租"}];
+const rentWayItems = [{value: "null", title: "不限"}, {value: "0", title: "二手房"}, {value: "1", title: "新房"}];
 const priceItems  = [{value: "null", title: "不限"},
-    {value: "0-1500", title: "1500元以下"},
-    {value: "1500-2500", title: "1500-2500元"},
-    {value: "2500-4000", title: "2500-4000元"},
-    {value: "4000-6000", title: "4000-6000元"},
-    {value: "6000-8000", title: "6000-8000元"},
-    {value: "8000-10000", title: "8000-10000元"},
-    {value: "10000-", title: "10000元以上"},
+    {value: "0-3000000", title: "300万元以下"},
+    {value: "3000000-4000000", title: "300-400万元"},
+    {value: "4000000-5000000", title: "400-500万元"},
+    {value: "5000000-8000000", title: "500-800万元"},
+    {value: "8000000-10000000", title: "800-1000万元"},
+    {value: "10000000-", title: "1000万元以上"},
 ];
 const  directionItems = [{value: "null", title: "不限"}, {value: "2", title: "南"},  {value: "4", title: "北"}, {value: "1", title: "东"},  {value: "3", title: "西"},];
 const houseTagsOption = HouseTagList.map((item: any) => ({label: item, value: item}));

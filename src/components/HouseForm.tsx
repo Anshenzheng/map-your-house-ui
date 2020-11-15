@@ -361,7 +361,7 @@ const HouseForm = (props) => {
               name="price"
               rules={[{ required: true, message: '请输入定价' }, numberValidate("房屋定价只能为正整数", /^\+?[1-9][0-9]*$/)]}
             >
-              <Input placeholder="定价" min={0} style={{ width: "100%" }} suffix="元/月" />
+              <Input placeholder="定价" min={0} style={{ width: "100%" }} suffix="万" />
             </Form.Item>
           </Col>
           <Col span={colSpan}>
@@ -377,13 +377,13 @@ const HouseForm = (props) => {
           <Col span={colSpan}>
             <Form.Item
               {...rowLayout}
-              label="租赁方式"
+              label="房屋类型"
               name="rentWay"
-              rules={[{ required: true, message: '请选择租赁方式' }]}
+              rules={[{ required: true, message: '请选择房屋类型' }]}
             >
-              <Select style={{ textAlign: "left" }} placeholder="请选择租赁方式">
-                <Option value={0}>合租</Option>
-                <Option value={1}>整租</Option>
+              <Select style={{ textAlign: "left" }} placeholder="请选择房屋类型">
+                <Option value={0}>二手房</Option>
+                <Option value={1}>新房</Option>
               </Select>
             </Form.Item>
           </Col>

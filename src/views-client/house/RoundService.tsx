@@ -55,7 +55,7 @@ const RoundService = () => {
             const geo = new BMap.Geocoder();
             const cityCnName = info.city.cnName;
             const regionCnName = info.city.cnName;
-            const houseAddress = info.house.houseDetail.address;
+            const houseAddress = info.house.houseDetail?.address;
             const address = cityCnName + regionCnName + houseAddress;
             map.setCurrentCity(cityCnName);
             geo.getPoint(address, function(point) {

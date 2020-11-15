@@ -10,7 +10,7 @@ const UserRights = () => {
     return (
         <Container>
             <div className="right-block">
-                <h4 className="title">环保装修，密闭检测出租</h4>
+                <h4 className="title">环保装修，密闭检测</h4>
                 <p className="description">仅友家整租房源</p>
             </div>
             <div className="right-block">

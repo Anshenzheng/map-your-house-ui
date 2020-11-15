@@ -22,7 +22,7 @@ const ReserveCommonProps = {
             key: 'price',
             align: "center" as "center",
             width: 100,
-            render: value => <span>{value}元/月</span>,
+            render: value => <span>{value}万</span>,
         },
         {
             title: '约看时间',

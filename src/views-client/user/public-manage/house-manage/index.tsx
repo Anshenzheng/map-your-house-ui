@@ -61,7 +61,7 @@ const HouseManage = () => {
             dataIndex: 'price',
             key: 'price',
             align: "center" as "center",
-            render: value => <span>{value}元/月</span>,
+            render: value => <span>{value}万</span>,
             sorter: true,
             sortOrder: searchParams.orderBy === 'price' && Tools.sortDirectionMap(searchParams.direction),
         },
@@ -80,8 +80,8 @@ const HouseManage = () => {
                         history.push("/user/house-edit/" + record.key);
                     }}/>
                     <Divider type="vertical"/>
-                    <Popconfirm title="修改房屋状态为已出租？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 2)}>
-                        <CheckCircleOutlined title="已出租" style={{cursor: "pointer", color: "#51c6cf"}}/>
+                    <Popconfirm title="修改房屋状态为已出售？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 2)}>
+                        <CheckCircleOutlined title="已出售" style={{cursor: "pointer", color: "#51c6cf"}}/>
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要删除该房源吗？" okText="确认" cancelText="取消" onConfirm={() => handleHouseStatusUpdate(record.key, 3)}>
@@ -99,8 +99,8 @@ const HouseManage = () => {
             render: (text, record) => (
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <Divider type="vertical"/>
-                    <Popconfirm title="修改房屋状态为待出租？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 1)}>
-                        <CloseCircleOutlined  title="待出租" style={{cursor: "pointer", color: "#51c6cf"}}/>
+                    <Popconfirm title="修改房屋状态为待出售？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 1)}>
+                        <CloseCircleOutlined  title="待出售" style={{cursor: "pointer", color: "#51c6cf"}}/>
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要删除该房源吗？" okText="确认" cancelText="取消" onConfirm={() => handleHouseStatusUpdate(record.key, 3)}>
@@ -116,7 +116,7 @@ const HouseManage = () => {
     }, []);
 
     const getHouseList = (params) => {
-        handleResponse(AdminApi.getHouseList(params), setHouseData, "获取出租列表失败", setLoading)
+        handleResponse(AdminApi.getHouseList(params), setHouseData, "获取出售列表失败", setLoading)
     };
 
     const dataSource = houseData.list.map((item: any) => ({
@@ -185,7 +185,7 @@ const HouseManage = () => {
         <Container>
             <Tabs activeKey={searchParams.status} onTabClick={handleStatusTabClick}>
                 <TabPane tab="发布中" key="1"/>
-                <TabPane tab="已出租" key="2"/>
+                <TabPane tab="已出售" key="2"/>
             </Tabs>
            <Table
                columns={columns}
@@ -243,7 +243,7 @@ const HouseInfo = ({data}) => {
                         {data.title}
                     </p>
                 </Link>
-                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "合租" : "整租"}</p>
+                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "二手房" : "新房"}</p>
                 <p>发布时间：{moment(data.createTime).format("YYYY/MM/DD hh:mm:ss")}</p>
                 <p><span style={{marginRight: 10}}><HeartOutlined/> 0次</span><EyeOutlined /> 0次</p>
             </div>

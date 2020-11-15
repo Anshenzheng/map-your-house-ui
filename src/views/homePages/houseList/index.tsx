@@ -143,7 +143,7 @@ const StatusStyle = styled.div`
 const statusMap = [
   { id: 0, text: '未审核', color: '#db162f' },
   { id: 1, text: '审核通过', color: '#51c6cf' },
-  { id: 2, text: '已出租', color: '#F0A202' },
+  { id: 2, text: '已出售', color: '#F0A202' },
 ]
 
 const { Option } = Select;

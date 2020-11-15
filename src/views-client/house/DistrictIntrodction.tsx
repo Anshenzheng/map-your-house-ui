@@ -50,7 +50,7 @@ const DistrictIntroduction = () => {
                     </div>
                 </div>
                 <div className="house-more">
-                    {houseInfo.district}{houseCountInDistrict}套在租房源
+                    {houseInfo.district}{houseCountInDistrict}套在售房源
                 </div>
             </div>
         </Container>

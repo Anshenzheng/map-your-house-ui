@@ -436,7 +436,7 @@ const HousePublishForm = (props) => {
                 <Row>
                     <Col span={2} className="row-title-container">
                         <span className="row-title star">
-                            出租房屋
+                            出售房屋
                         </span>
                     </Col>
                     <Col className="row-input-container">
@@ -481,14 +481,14 @@ const HousePublishForm = (props) => {
                 {/* 出租信息**************************************************/}
                 <Row>
                     <Col span={2} className="row-title-container">
-                        <h2 className="title">出租信息</h2>
+                        <h2 className="title">出售信息</h2>
                     </Col>
                 </Row>
                 {/* 出租方式 */}
                 <Row>
                     <Col span={2} className="row-title-container">
                         <span className="row-title star">
-                            出租方式
+                            房屋类型
                         </span>
                     </Col>
                     <Col className="row-input-container">
@@ -497,9 +497,9 @@ const HousePublishForm = (props) => {
                             name="rentWay"
                             rules={[{ required: true, message: '必选' }]}
                         >
-                            <Select style={{...formStyle.input, width: 120}} placeholder="租赁方式">
-                                <Option value={0}>合租</Option>
-                                <Option value={1}>整租</Option>
+                            <Select style={{...formStyle.input, width: 120}} placeholder="房屋类型">
+                                <Option value={0}>二手房</Option>
+                                <Option value={1}>新房</Option>
                             </Select>
                         </Form.Item>
                     </Col>
@@ -508,7 +508,7 @@ const HousePublishForm = (props) => {
                 <Row>
                     <Col span={2} className="row-title-container">
                         <span className="row-title star">
-                            租金信息
+                            房价信息
                         </span>
                     </Col>
                     <Col className="row-input-container">
@@ -517,7 +517,7 @@ const HousePublishForm = (props) => {
                             name="price"
                             rules={[{ required: true, message: '必填' }, numberValidate("非负整数", /^\+?[1-9][0-9]*$/)]}
                         >
-                            <Input style={{...formStyle.input, width: 120}}  suffix="元/月"  className="input-center"/>
+                            <Input style={{...formStyle.input, width: 120}}  suffix="万"  className="input-center"/>
                         </Form.Item>
                     </Col>
                 </Row>
@@ -623,8 +623,8 @@ const HousePublishForm = (props) => {
                         >
                             <TextArea
                                 style={{...formStyle.input, width: 540, height: 130, marginRight: 0}}
-                                placeholder="可以介绍一下房源亮点，交通、周边环境，可以入住的时间和对租客的要求等，
-                                详细的描述会大大增加快速出租的机会！请不要在描述中包含：
+                                placeholder="可以介绍一下房源亮点，交通、周边环境，
+                                详细的描述会大大增加快速售出的机会！请不要在描述中包含：
                                 1.任意形式的联系方式及变型词；
                                 2.与房源或相关配套描述无关的内容；3.违反国家法律法规的内容等"
                             />

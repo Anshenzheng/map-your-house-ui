@@ -43,7 +43,7 @@ const UserStar = () => {
             key: 'price',
             align: "center" as "center",
             width: 100,
-            render: value => <span>{value}元/月</span>,
+            render: value => <span>{value}万</span>,
         },
         {
             title: '状态',
@@ -189,7 +189,7 @@ export const HouseInfoColumnComponent = ({data}) => {
                         {data.title}
                     </p>
                 </Link>
-                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "合租" : "整租"}</p>
+                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "二手房" : "新房"}</p>
             </div>
         </HouseInfoContainer>
     )

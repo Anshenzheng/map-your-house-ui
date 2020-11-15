@@ -27,6 +27,6 @@ export const HouseDevicesConfigIcon = [
 export const HouseStatusMap = {
     0: "未审核",
     1: "可入住",
-    2: "已出租",
+    2: "已出售",
     3: "已下架",
 };

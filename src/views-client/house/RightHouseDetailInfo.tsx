@@ -19,7 +19,7 @@ const RightHouseDetailInfo = () => {
             <div className="price"><span className="icon">￥</span>
                 <span className="number">
                     {houseInfo.price}
-                </span>/月（季付价）
+                </span>万
             </div>
             <div className="tags">
                 {houseInfo?.tags.map((item, index) => <span key={index}>{item}</span> )}

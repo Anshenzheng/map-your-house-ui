@@ -19,7 +19,7 @@ const ClientRoutes =   [{
         },
         {
             path: "/client/home",
-            meta: { title: '租房首页'},
+            meta: { title: '首页'},
             exact: true,
             component: SuspenseComponent(ClientHome)
         },

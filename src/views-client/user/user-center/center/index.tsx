@@ -65,9 +65,9 @@ const UserCenter= () => {
                     </div>
                     <Divider type="vertical" style={{height: 90, margin: "0 50px"}}/>
                     <div style={{textAlign: "center"}}>
-                        <p>自如分</p>
+                        <p>我居分</p>
                         <p style={{marginTop: 24, fontSize: 22}}>未授权</p>
-                        <p style={{fontSize: 12}}>请到自如APP授权</p>
+                        <p style={{fontSize: 12}}>请到我居APP授权</p>
                     </div>
                 </div>
             </div>

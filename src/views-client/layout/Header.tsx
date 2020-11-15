@@ -34,7 +34,6 @@ const Header = (props) => {
                 <div className="tab-menu">
                     <div className="item"><Link to={"/client/home"}><span className="title"> 首页 <span className="underline"/></span></Link></div>
                     <div className="item"><Link to={"/client/home"}> <span className="title"> 租房 <span className="underline"/></span></Link></div>
-                    <div className="item"><Link to={"/client/home"}> <span className="title"> 一夜租房 <span className="underline"/></span></Link></div>
                     <div className="item"><Link to={"/client/home"}> <span className="title"> 拼室友 <span className="underline"/></span></Link></div>
                     <div className="item"><Link to={"/client/home"}> <span className="title"> APP下载 <span className="underline"/></span></Link></div>
                     <div className="item"><Link to={"/client/home"}> <span className="title"> 房东中心 <span className="underline"/></span></Link></div>
