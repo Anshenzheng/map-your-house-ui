@@ -564,7 +564,7 @@ const HousePublishForm = (props) => {
                                     allowClear={true}
                                     notFoundContent={selectNotFound(subwayListLoading, "当前城市无地铁线路信息")}>
                                 {
-                                    subwayList.map(item => <Option key={item.id} value={item.id}>{item.name}</Option>)
+                                    subwayList.map(item => <Option key={item.id} value={item.lineId}>{item.lineName}</Option>)
                                 }
                             </Select>
                         </Form.Item>
@@ -797,7 +797,9 @@ interface address {
 interface subway {
     id: number,
     name: string,
-    cityEnName: string
+    cityEnName: string,
+    lineName: string,
+    lineId: string
 }
 
 interface subwayStation {

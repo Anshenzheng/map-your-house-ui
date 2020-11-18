@@ -140,7 +140,9 @@ const PictureUploader = (props) => {
               )
             })
           }
-          <Upload
+
+        </FlipMove>
+        <Upload
             style={{ display: "inline-block" }}
             listType="picture-card"
             fileList={value.imageList}
@@ -150,10 +152,9 @@ const PictureUploader = (props) => {
             beforeUpload={(file) => beforeUpload(file, limits)}
             onChange={handleFileChange}
             customRequest={handleUpload}
-          >
-            {value.imageList.length >= maxNumber ? null : uploadButton}
-          </Upload>
-        </FlipMove>
+        >
+          {value.imageList.length >= maxNumber ? null : uploadButton}
+        </Upload>
       </div>
       <Modal
         visible={previewModalVisible}

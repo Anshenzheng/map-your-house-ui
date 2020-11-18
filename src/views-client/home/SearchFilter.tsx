@@ -237,7 +237,7 @@ const SearchFilter = (props) => {
                           <Skeleton active={true} loading={searchTypeLoading} paragraph={{ rows: 1 }} title={false}>
                             <OptionSpanRadioGroup value={searchParams.subwayLineId} onChange={handleSubwayChange}>
                               {
-                                subway.list.map((item: any) => <OptionSpanRadio key={item.id} value={item.id}>{item.name}</OptionSpanRadio>)
+                                subway.list.map((item: any) => <OptionSpanRadio key={item.id} value={item.id}>{item.lineName}</OptionSpanRadio>)
                               }
                             </OptionSpanRadioGroup>
                           </Skeleton>
