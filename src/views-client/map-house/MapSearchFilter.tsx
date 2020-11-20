@@ -15,8 +15,8 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
 
     return (
         <Container>
-            <FilterItemComponent value={searchParams.rentWay} name={rentWayItems.find(item => item.value === searchParams.rentWay)?.title || "房屋类型"}
-                                 items={rentWayItems} onSelect={(params) =>onChange({rentWay: params.key}) }
+            <FilterItemComponent value={searchParams.houseType} name={rentWayItems.find(item => item.value === searchParams.houseType)?.title || "房屋类型"}
+                                 items={rentWayItems} onSelect={(params) =>onChange({houseType: params.key}) }
             />
             <FilterItemComponent value={searchParams.priceRange} name={priceItems.find(item => item.value === searchParams.priceRange)?.title || "价格"} items={priceItems} onSelect={(params) => {
                 const priceArr = params.key.split("-");
@@ -30,7 +30,7 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
                 tags: searchParams.tags,
             }} onMoreOptionChange={(params) => onChange({tags: params.tags})}/>
             {
-                (searchParams.rentWay !== null || searchParams.priceRange != null || searchParams.direction  !== null || searchParams.tags.length > 0 ) &&
+                (searchParams.houseType !== null || searchParams.priceRange != null || searchParams.direction  !== null || searchParams.tags.length > 0 ) &&
                 <div className="clear-all" onClick={onClearAll}><CloseSquareOutlined style={{marginRight: 5}}/>清除所有选项</div>
             }
         </Container>

@@ -304,7 +304,7 @@ const SearchFilter = (props) => {
           类型
                 </Col>
         <Col span={22} className="option">
-          <OptionSpanRadioGroup value={searchParams.rentWay} onChange={value => onChange({ rentWay: value })}>
+          <OptionSpanRadioGroup value={searchParams.houseType} onChange={value => onChange({ houseType: value })}>
             <OptionSpanRadio value={0}>二手房</OptionSpanRadio>
             <OptionSpanRadio value={1}>新房</OptionSpanRadio>
           </OptionSpanRadioGroup>

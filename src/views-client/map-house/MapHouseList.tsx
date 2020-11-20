@@ -42,7 +42,7 @@ const MapHouseList = ({ orderBy, sortDirection, onSortChange, houseData, onArriv
                         <span className="price"><span className="number">¥{item.price}</span> 万</span>
                       </div>
                       <div className="position">
-                        <i className="iconfont" style={{ fontSize: "12px", fontWeight: "bold" }}>&#xe620;</i> {item.houseDetail.address}
+                        <i className="iconfont" style={{ fontSize: "12px", fontWeight: "bold" }}>&#xe620;</i> {item.houseDetail?.address}
                       </div>
                       <div className="tags">
                         {

@@ -46,7 +46,8 @@
     "styled-components": "^5.1.0",
     "swiper": "^5.4.5",
     "typescript": "~3.7.2",
-    "use-immer": "^0.4.0"
+    "use-immer": "^0.4.0",
+    "pannellum-react": "~0.2.8"
   },
   "scripts": {
     "start": "react-app-rewired start",

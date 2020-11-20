@@ -14,7 +14,7 @@ const initSearchParam = {
     pageSize: 5,
     orderBy: SortTypeEnum.DEFAULT,
     sortDirection: SortDirectionEnum.DESC,
-    rentWay: null,
+    houseType: null,
     priceMin: null,
     priceMax: null,
     direction: null,

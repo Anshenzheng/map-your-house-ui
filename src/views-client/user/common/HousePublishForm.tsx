@@ -267,7 +267,7 @@ const HousePublishForm = (props) => {
     const handleGenerateDescription = () => {
         form.validateFields(["district", "region", "street", "room",
             "parlour", "bathroom", "floor", "totalFloor", "direction", "area",
-            "buildYear", "rentWay", "price"]).then(res => {
+            "buildYear", "houseType", "price"]).then(res => {
             const values = form.getFieldsValue();
             const region = regions.find(item => item.enName === values.region)?.cnName;
             const district = `房子在${values.district}小区,环境优美,绿化充足\n`;
@@ -494,7 +494,7 @@ const HousePublishForm = (props) => {
                     <Col className="row-input-container">
                         <Form.Item
                             label={null}
-                            name="rentWay"
+                            name="houseType"
                             rules={[{ required: true, message: '必选' }]}
                         >
                             <Select style={{...formStyle.input, width: 120}} placeholder="房屋类型">

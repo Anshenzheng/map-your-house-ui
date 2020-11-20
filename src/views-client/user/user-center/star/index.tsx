@@ -189,7 +189,7 @@ export const HouseInfoColumnComponent = ({data}) => {
                         {data.title}
                     </p>
                 </Link>
-                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "二手房" : "新房"}</p>
+                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.houseType === 0 ? "二手房" : "新房"}</p>
             </div>
         </HouseInfoContainer>
     )

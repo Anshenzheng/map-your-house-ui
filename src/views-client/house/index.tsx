@@ -21,7 +21,8 @@ import {useHistory} from "react-router";
 import StorageUtil from "@utils/storage";
 import {setLoginModalCallback} from "@store/redux/common.redux";
 import {Spin} from "antd";
-
+import PannellumReact from "@views-client/house/RoomPannellum";
+import myImage from "../../assets/img/alma.ce3e3084.jpg";
 export const BROWSER_HISTORY_KEY = "BROWSER_HISTORY";
 
 const HouseDetail = (props) => {
@@ -35,6 +36,22 @@ const HouseDetail = (props) => {
 
     const history = useHistory();
 
+    const pannellumImg = {
+        "imgUrl":"https://img.zcool.cn/community/019cae5eedb0cfa801215aa0062a49.jpg@1280w_1l_0o_100sh.jpg",
+        "hotSports":[{
+            "id":"112345",
+            "text":"bedroom",
+            "pitch":11,
+            "yaw":-167,
+            "hfov":120,
+            "pannellumImg": {
+                "imgUrl": "https://img.zcool.cn/community/01bf6f5f193592a8012066218ab3c2.png@1280w_1l_2o_100sh.png",
+
+
+            }
+        }]
+
+    }
     useEffect(() => {
         let houseIdList = StorageUtil.get(BROWSER_HISTORY_KEY);
         if(houseIdList && houseIdList instanceof Array){
@@ -71,8 +88,8 @@ const HouseDetail = (props) => {
                                 <HouseIntroduction/>
                                 {/*租约信息*/}
                                 <RentInfo/>
-                                {/*室友信息*/}
-                                <RoomMateInfo/>
+                                {/*室内全景*/}
+                                <PannellumReact pannellumImg={pannellumImg}/>
                                 {/*小区简介*/}
                                 <DistrictIntroduction/>
                             </LeftInfoContainer>

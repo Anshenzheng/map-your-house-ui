@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {Anchor, Popover} from "antd";
 import {HeartOutlined, ShareAltOutlined} from "@ant-design/icons/lib";
+import {Pannellum , PannellumVideo} from 'pannellum-react';
 const { Link } = Anchor;
 
 /**
@@ -48,7 +49,7 @@ const HouseNavigation = () => {
                         <Link href="#components-anchor-rent-info_1" title="签约信息"/>
                     </div>
                     <div ref={ref => refArray[2] = ref} className="anchor-item-container">
-                        <Link href="#components-anchor-roommate-info_2" title="室友信息"/>
+                        <Link href="#components-anchor-roompanellum-info_2" title="室内全景"/>
                     </div>
                     <div ref={ref => refArray[3] = ref} className="anchor-item-container">
                         <Link href="#components-anchor-district-info_3" title="小区简介"/>

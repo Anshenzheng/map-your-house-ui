@@ -243,7 +243,7 @@ const HouseInfo = ({data}) => {
                         {data.title}
                     </p>
                 </Link>
-                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.rentWay === 0 ? "二手房" : "新房"}</p>
+                <p>{data.floor}/{data.totalFloor}层 | {data.area}平方米 | { data.houseDetail?.houseType === 1 ? "新房" : "二手房"}</p>
                 <p>发布时间：{moment(data.createTime).format("YYYY/MM/DD hh:mm:ss")}</p>
                 <p><span style={{marginRight: 10}}><HeartOutlined/> 0次</span><EyeOutlined /> 0次</p>
             </div>

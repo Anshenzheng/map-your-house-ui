@@ -1,8 +1,8 @@
 // 房屋标签集合
-export const HouseTagList = ["离地铁近",  "视频看房", "绿化率高",  "集体供暖", "中央供暖", "独立供暖"];
+export const HouseTagList = ["离地铁近",  "视频看房", "绿化率高",  "户型正气", "满五唯一"];
 
 // 房屋朝向集合
-export const HouseDirectionList = [{value: 1, label: "朝东"}, {value: 2, label: "朝南"}, {value: 3, label: "朝西"}, {value: 4, label: "朝北"}];
+export const HouseDirectionList = [{value: 1, label: "朝东"}, {value: 2, label: "朝南"}, {value: 3, label: "朝西"}, {value: 4, label: "朝北"}, {value: 5, label: "南北"}, {value: 6, label: "东西"}];
 
 
 export const HouseDevicesConfigIcon = [

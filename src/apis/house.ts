@@ -8,7 +8,7 @@ interface HouseSearchForm {
   regionEnName?: string,
   subwayLineId?: number,
   subwayStationId?: number,
-  rentWay?: number,
+  houseType?: number,
   priceMin?: number,
   priceMax?: number,
   tags?: Array<String>,
@@ -23,7 +23,7 @@ interface HouseSearchForm {
 interface MapHouseSearchForm {
   cityEnName: string,
   regionEnName?: string,
-  rentWay?: number,
+  houseType?: number,
   priceMin?: number,
   priceMax?: number,
   tags?: Array<String>,

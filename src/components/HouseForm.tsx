@@ -378,7 +378,7 @@ const HouseForm = (props) => {
             <Form.Item
               {...rowLayout}
               label="房屋类型"
-              name="rentWay"
+              name="houseType"
               rules={[{ required: true, message: '请选择房屋类型' }]}
             >
               <Select style={{ textAlign: "left" }} placeholder="请选择房屋类型">

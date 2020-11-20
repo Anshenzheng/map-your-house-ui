@@ -55,7 +55,7 @@ const HouseEdit = (props) => {
                 area: data.house.area,
                 price: data.house.price,
                 buildYear: moment(data.house.buildYear, "YYYY"),
-                rentWay: data.house.houseDetail.rentWay,
+                houseType: data.house.houseDetail.houseType,
                 totalFloor: data.house.totalFloor,
                 subway: data.subway.id,
                 subwayStation: data.subwayStation.id,
