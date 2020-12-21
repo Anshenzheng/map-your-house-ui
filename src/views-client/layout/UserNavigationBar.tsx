@@ -81,7 +81,7 @@ const Container = styled.div`
         .item-list{
             margin-left: 60px;
             .ant-menu-item{
-                border-bottom: 0 solid #51c6cf;
+                border-bottom: 0 solid #f67d2e;
                 font-size: 16px;
             }
             .ant-menu-item-selected{

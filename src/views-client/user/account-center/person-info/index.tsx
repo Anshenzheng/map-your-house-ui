@@ -131,7 +131,7 @@ const PersonInfo = () => {
                     密码
                 </Col>
                 <Col className="col-right">
-                    <Link to="/user/account/reset-password" style={{color: "#51c6cf"}}>修改密码</Link>
+                    <Link to="/user/account/reset-password" style={{color: "#f67d2e"}}>修改密码</Link>
                 </Col>
             </Row>
             <Row className="row">

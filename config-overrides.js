@@ -74,9 +74,11 @@ module.exports = {
         javascriptEnabled: true,
         //下面这行很特殊，这里是更改主题的关键，这里我只更改了主色，当然还可以更改其他的，下面会详细写出。
         modifyVars: {
-          "@primary-color": "#51c6cf", // 全局主色
+            "@primary-color": "#f67d2e",
+          //"@primary-color": "#51c6cf", // 全局主色
           // "@link-color": "#1890ff", // 链接色
-          "@success-color": "#51c6cf", // 成功色
+          //"@success-color": "#51c6cf", // 成功色
+            "@success-color": "#f67d2e", // 成功色
           "@warning-color": "#f16d7a", // 警告色
           "@error-color": "#f5222d", // 错误色
           // "@font-size-base": "14px", // 主字号

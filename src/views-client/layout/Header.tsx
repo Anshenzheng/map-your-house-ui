@@ -104,7 +104,7 @@ const Container = styled.div`
                     transform: translateX(-50%);
                     width: 0;
                     height: 2px;
-                    background: #51c6cf;
+                    background: #f67d2e;
                     border-radius: 1px;
                     -webkit-transition: width .3s;
                     transition: width .3s;

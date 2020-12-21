@@ -67,14 +67,14 @@ const Container = styled.div`
             transform: translateX(-50%);
             width: 0;
             height: 2px;
-            background: #51c6cf;
+            background: #f67d2e;
             border-radius: 1px;
             -webkit-transition: width .3s;
             transition: width .3s;
             will-change: width;
         }
         &:hover{
-            color: #51c6cf;
+            color: #f67d2e;
         }
         &:hover .underline{
             width: 100%;
@@ -84,7 +84,7 @@ const Container = styled.div`
        width: 100%;
     }
     .name-active, .icon-active{
-        color: #51c6cf;
+        color: #f67d2e;
     }
 `;
 

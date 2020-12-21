@@ -32,7 +32,7 @@ export const GlobalCss = createGlobalStyle`
       box-sizing: border-box;
       font-size: 14px;
       font-weight: 500;
-      background: #51c6cf0f;
+      background: #f67d2e0f;
       padding: 0px 16px;
       color: rgba(27, 29, 31, 0.65);
     }

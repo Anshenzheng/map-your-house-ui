@@ -114,7 +114,7 @@ const Container = styled.div`
                         color: #000;
                         &:hover{
                             margin-left: 10px;
-                            color: #51c6cf;
+                            color: #f67d2e;
                             cursor: pointer;
                         }
                     }
@@ -157,7 +157,7 @@ const Container = styled.div`
                         margin: 0 5px;
                         cursor: pointer;
                         &:hover{
-                            color: #51c6cf;
+                            color: #f67d2e;
                         }
                     }
                  }

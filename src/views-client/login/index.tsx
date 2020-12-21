@@ -64,7 +64,7 @@ export const LoginHead = () => {
     )
 };
 const LoginHeadContainer = styled.div`
-    border-bottom: 2px solid #51c6cf;
+    border-bottom: 2px solid #f67d2e;
     .head{
         width: 1200px;
         height: 83px;
@@ -96,7 +96,7 @@ const Container = styled.div`
                 .span-btn{
                     font-size: 14px;
                     cursor: pointer;
-                    color: #51c6cf;
+                    color: #f67d2e;
                 }
             }
         }
@@ -113,7 +113,7 @@ export const LoginStyle = {
   inputPrefix: {
       fontSize: 20,
       marginRight: 10,
-      color: "#51c6cf"
+      color: "#f67d2e"
   },
   button:{
       width: 280,

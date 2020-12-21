@@ -259,7 +259,7 @@ const LoginRegisterModal = ({type, onTypeChange, visible, onCancel, onOk}) => {
                             </Form.Item>
                         }
                         {
-                            type === ModalModeType.PASSWORD_LOGIN &&  <Link to="/forget-password" target="_blank" style={{cursor: "pointer", color: "#51c6cf", marginBottom: 20, display: "inline-block"}}>忘记密码？</Link>
+                            type === ModalModeType.PASSWORD_LOGIN &&  <Link to="/forget-password" target="_blank" style={{cursor: "pointer", color: "#f67d2e", marginBottom: 20, display: "inline-block"}}>忘记密码？</Link>
                         }
                         <Form.Item>
                             <Button block size="large" type="primary" style={{height: 50, borderRadius: 0}} htmlType="submit" loading={formButtonLoading}>

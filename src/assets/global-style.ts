@@ -18,7 +18,8 @@ const noWrap = () => {
   `
 }
 
-const themeColor = '#51c6cf'
+//const themeColor = '#f67d2e'
+const themeColor = '#f67d2e'
 
 const plainBtn = () => {
   return `
@@ -28,7 +29,8 @@ const plainBtn = () => {
 }
 
 export default {
-  'theme-color': '#51c6cf',
+  //'theme-color': '#f67d2e',
+  'theme-color': '#f67d2e',
   'danger-color': '#db162f',
   'warning-color': '#F0A202',
   'normal-font': 'rgba(34, 34, 34, 0.85)',

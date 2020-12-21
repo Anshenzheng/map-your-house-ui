@@ -244,7 +244,7 @@ const ResetPasswordComponent = (props) => {
             {
                 step === 2 &&
                     <div className="finish-container">
-                        <CheckCircleOutlined style={{fontSize: 25, color: "#51c6cf", marginRight: 10}}/>重置密码完成! {redirectTimer.count}秒后自动跳转到登录页
+                        <CheckCircleOutlined style={{fontSize: 25, color: "#f67d2e", marginRight: 10}}/>重置密码完成! {redirectTimer.count}秒后自动跳转到登录页
                     </div>
             }
         </Container>

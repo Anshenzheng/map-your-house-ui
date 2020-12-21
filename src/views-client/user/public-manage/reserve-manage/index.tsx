@@ -72,7 +72,7 @@ const ReserveManage = () => {
             dataIndex: 'user',
             key: 'user',
             align: "center" as "center",
-            render: (user) => <Tag color="#51c6cf" style={{cursor: "pointer"}} onClick={() => setUserInfoModal({
+            render: (user) => <Tag color="#f67d2e" style={{cursor: "pointer"}} onClick={() => setUserInfoModal({
                 visible: true,
                 user: user
             })}>{user?.nickName}</Tag>,
@@ -88,7 +88,7 @@ const ReserveManage = () => {
             render: (text, record) => (
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <Popconfirm title="已经联系用户并确认过该约看？" okText="确认" cancelText="取消" onConfirm={() => handleOperateReserve(record.key, 2)}>
-                        <CarryOutOutlined style={{cursor: "pointer", color: "#51c6cf"}} title="已联系用户"/>
+                        <CarryOutOutlined style={{cursor: "pointer", color: "#f67d2e"}} title="已联系用户"/>
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要取消该预约吗？" okText="确认" cancelText="取消" onConfirm={() => handleOperateReserve(record.key, 1)}>
@@ -107,7 +107,7 @@ const ReserveManage = () => {
             render: (text, record) => (
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <Popconfirm title="用户已完成看房？" okText="确认" cancelText="取消" onConfirm={() => handleOperateReserve(record.key, 3)}>
-                        <CheckCircleOutlined style={{cursor: "pointer", color: "#51c6cf"}} title="已看房" />
+                        <CheckCircleOutlined style={{cursor: "pointer", color: "#f67d2e"}} title="已看房" />
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要取消该预约吗？" okText="确认" cancelText="取消" onConfirm={() => handleOperateReserve(record.key, 1)}>

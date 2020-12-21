@@ -106,13 +106,13 @@ const MapSearchDropdownGlobalStyle = createGlobalStyle`
             align-items: center;
             &:hover{
                 color: #FFFFFF;
-                background: #51c6cf;
+                background: #f67d2e;
             }
         
        }
         .ant-select-item-option-active {
            color: #FFFFFF;
-           background: #51c6cf !important;
+           background: #f67d2e !important;
         }
        div{
             overflow: hidden !important;

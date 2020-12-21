@@ -117,7 +117,7 @@ const MoreOptionComponent = ({moreOptions, onMoreOptionChange}) => {
        }} visible={menuVisible}>
            <div className="select-item">
                 <span className="select-block" style={{paddingRight: count > 0 ? 40: 20}}>
-                     <Badge count={count} offset={[15, 8]} style={{backgroundColor: "#51c6cf"}}>
+                     <Badge count={count} offset={[15, 8]} style={{backgroundColor: "#f67d2e"}}>
                          <span style={{fontSize: "16px", color: "#444444"}}>
                              更多
                          </span>
@@ -201,7 +201,7 @@ const MoreOptionOverLayContainer = styled.div`
             color: #444444;
             transition: color 0.3s;
             &:hover{
-              color: #51c6cf;
+              color: #f67d2e;
             }
           }
           
@@ -223,7 +223,7 @@ const MoreOptionOverLayContainer = styled.div`
              cursor: pointer;
              transition: color 0.3s;
               &:hover{
-                  color: #51c6cf;
+                  color: #f67d2e;
                }
            }
         }
@@ -271,12 +271,12 @@ const Container = styled.div`
             }
              .rotate-triangle-enter-active{
                 transform: rotate(180deg);
-                border-top: 6px solid #51c6cf;
+                border-top: 6px solid #f67d2e;
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
             .rotate-triangle-enter-done , .rotate-triangle-exit{
                 transform: rotate(180deg);
-                border-top: 6px solid #51c6cf;
+                border-top: 6px solid #f67d2e;
             }
             .rotate-triangle-exit-active{
                 transform: rotate(0deg);
@@ -296,7 +296,7 @@ const Container = styled.div`
         margin-left: 30px;
         color: #666;
         &:hover{
-            color: #51c6cf;
+            color: #f67d2e;
         }
     }
 `;

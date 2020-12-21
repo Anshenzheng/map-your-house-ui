@@ -120,7 +120,7 @@ const Container = styled.div`
                 margin: 0;
             }
             .btn{
-                background: #51c6cf;
+                background: #f67d2e;
                 color: #fff;
                 display: flex;
                 justify-content: center;

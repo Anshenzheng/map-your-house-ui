@@ -76,12 +76,12 @@ const HouseManage = () => {
             align: "center" as "center",
             render: (text, record) => (
                 <div style={{display: "flex", justifyContent: "center"}}>
-                    <EditOutlined style={{cursor: "pointer", color: "#51c6cf"}} title="编辑" onClick={() => {
+                    <EditOutlined style={{cursor: "pointer", color: "#f67d2e"}} title="编辑" onClick={() => {
                         history.push("/user/house-edit/" + record.key);
                     }}/>
                     <Divider type="vertical"/>
                     <Popconfirm title="修改房屋状态为已出售？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 2)}>
-                        <CheckCircleOutlined title="已出售" style={{cursor: "pointer", color: "#51c6cf"}}/>
+                        <CheckCircleOutlined title="已出售" style={{cursor: "pointer", color: "#f67d2e"}}/>
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要删除该房源吗？" okText="确认" cancelText="取消" onConfirm={() => handleHouseStatusUpdate(record.key, 3)}>
@@ -100,7 +100,7 @@ const HouseManage = () => {
                 <div style={{display: "flex", justifyContent: "center"}}>
                     <Divider type="vertical"/>
                     <Popconfirm title="修改房屋状态为待出售？" okText="确认" cancelText="取消"  onConfirm={() => handleHouseStatusUpdate(record.key, 1)}>
-                        <CloseCircleOutlined  title="待出售" style={{cursor: "pointer", color: "#51c6cf"}}/>
+                        <CloseCircleOutlined  title="待出售" style={{cursor: "pointer", color: "#f67d2e"}}/>
                     </Popconfirm>
                     <Divider type="vertical"/>
                     <Popconfirm title="确认要删除该房源吗？" okText="确认" cancelText="取消" onConfirm={() => handleHouseStatusUpdate(record.key, 3)}>

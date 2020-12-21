@@ -616,7 +616,7 @@ const HousePublishForm = (props) => {
                         </span>
                     </Col>
                     <Col className="row-input-container" style={{display: "block"}}>
-                        <p style={{cursor: "pointer", color: "#51c6cf", fontSize: "12px", marginBottom: 5}} onClick={handleGenerateDescription}>快速生成描述</p>
+                        <p style={{cursor: "pointer", color: "#f67d2e", fontSize: "12px", marginBottom: 5}} onClick={handleGenerateDescription}>快速生成描述</p>
                         <Form.Item
                             name="description"
                             rules={[{ required: true, message: '请输入房源描述'}, {min: 6, message: "房源描述过短"}, {max: 300, message: "描述最多不超过300字"}]}

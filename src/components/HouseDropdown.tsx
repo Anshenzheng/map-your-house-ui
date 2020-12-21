@@ -72,18 +72,18 @@ const GlobalHouseDropdown =  createGlobalStyle `
                     margin: 0 auto;
                     width: 0%;
                     height: 3px;
-                    background: #51c6cf;
+                    background: #f67d2e;
                     transition: all 0.3s;
                 }
             }
             .active{
-                color: #51c6cf;
+                color: #f67d2e;
                 .city-item-bottom-line{
                     width: 100%;
                 }
             }
             &:hover{
-                color: #51c6cf;
+                color: #f67d2e;
             }
              &:hover .city-item-content .city-item-bottom-line{
                 width: 100%;

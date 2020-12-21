@@ -119,7 +119,7 @@ const LoginRegisterBtn = () => {
 const DropDownContainer = styled.div`
  .self-item{
     &:hover{
-        color: #51c6cf;
+        color: #f67d2e;
     }
  }
  li{
@@ -138,14 +138,14 @@ const Container = styled.div`
     .btn{
        cursor: pointer;
        &:hover{
-        color: #51c6cf;
+        color: #f67d2e;
        }      
     }
     .avatar{
         cursor: pointer;
         margin-right: 15px;
         &:hover{
-            color: #51c6cf;
+            color: #f67d2e;
         }        
     }
    

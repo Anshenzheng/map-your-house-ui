@@ -131,7 +131,7 @@ const Container = styled.div`
             transition: all 0.3s;
         }
         .ant-anchor-link-active > .ant-anchor-link-title {
-            color: #51c6cf;
+            color: #f67d2e;
         }
         .ant-anchor-ink {
             display: none;
@@ -142,7 +142,7 @@ const Container = styled.div`
             position: absolute;
             width: 100px;
             height: 2px;
-            background: #51c6cf;
+            background: #f67d2e;
         }
         .nav-start-share{
             position: absolute;

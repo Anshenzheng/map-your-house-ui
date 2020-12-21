@@ -258,7 +258,7 @@ const Container = styled.div`
             box-shadow: 0 0 3px rgba(0,0,0,.3);
             color: #000;
             &:hover{
-              background: #51c6cf;
+              background: #f67d2e;
               color: #fff;
             }
         }
@@ -269,7 +269,7 @@ const Container = styled.div`
             width: 0px;
             background: rgba(81,198,207, 0.2);
             border-radius: 2px;
-            border: 1px solid #51c6cf;
+            border: 1px solid #f67d2e;
         }
    }
     .area-error{
@@ -295,10 +295,10 @@ const Container = styled.div`
        cursor: pointer;
        transition: all .2s linear;
        &:hover{
-            color: #51c6cf;
+            color: #f67d2e;
        }
        &:hover .lock-icon{
-           background-color: #51c6cf;
+           background-color: #f67d2e;
            color: #fff;
        }
        .lock-icon{
@@ -316,9 +316,9 @@ const Container = styled.div`
        }
    }
    .not-active-loading{
-      color: #51c6cf;
+      color: #f67d2e;
      .lock-icon{
-           background-color: #51c6cf;
+           background-color: #f67d2e;
            color: #fff;
      }
    }

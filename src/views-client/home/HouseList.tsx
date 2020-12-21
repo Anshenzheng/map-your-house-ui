@@ -116,7 +116,7 @@ const HouseBoxContainer = styled.div`
             line-height: 1em;
             margin: 0;
             .icon-sign{
-                background: #51c6cf;
+                background: #f67d2e;
                 width: 20px;
                 height: 20px;
                 border-radius: 2px;
@@ -135,7 +135,7 @@ const HouseBoxContainer = styled.div`
             margin: 0;
             line-height: 17px;
             &:hover {
-               color: #51c6cf;
+               color: #f67d2e;
             }
         }
         .desc{
@@ -153,7 +153,7 @@ const HouseBoxContainer = styled.div`
             overflow: hidden;
         }
         .price{
-            color:  #51c6cf;
+            color:  #f67d2e;
             letter-spacing: -1px;
             display: flex;
             align-items: center;

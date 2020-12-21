@@ -142,7 +142,7 @@ const HouseImagePreview = () => {
                     <div className="btn"  onClick={handleStarClick}>
                         {
                             star ?
-                                <><HeartFilled style={{color: "#51c6cf", marginRight: 5}}/>已收藏</>
+                                <><HeartFilled style={{color: "#f67d2e", marginRight: 5}}/>已收藏</>
                                 :
                                 <><HeartOutlined style={{marginRight: 5}}/>收藏</>
                         }

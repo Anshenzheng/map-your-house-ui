@@ -121,7 +121,7 @@ const Container = styled.div`
                 padding-top: 15px;
             }
             .name{
-                color: #51c6cf;
+                color: #f67d2e;
             }
             .bind{
                 font-size: 14px;
@@ -151,7 +151,7 @@ const Container = styled.div`
             font-size: 16px;
             color: #333;
             padding-bottom: 14px;
-            border-bottom: 2px solid #51c6cf;
+            border-bottom: 2px solid #f67d2e;
             margin-bottom: 20px;
         }
         .star-list{
@@ -181,7 +181,7 @@ const Container = styled.div`
                         white-space: nowrap;
                     }
                     .price{
-                        color: #51c6cf;
+                        color: #f67d2e;
                         font-weight: 400;
                     }
                 }

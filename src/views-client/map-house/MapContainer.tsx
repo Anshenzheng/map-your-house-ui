@@ -116,7 +116,7 @@ const MapContainer = ({onBoundsChange, childRef, houseList}) => {
             // 添加区域鼠标移出事件（隐藏地图区域位置）
             label.addEventListener("mouseout", (e) => {
                 const boundaries = polygonContext[content] || [];
-                label.setStyle({background: "#51C6CF"});
+                label.setStyle({background: "#f67d2e"});
                 for(let i = 0; i < boundaries.length; i++){
                     boundaries[i].hide();
                 }
@@ -233,7 +233,7 @@ const Container = styled.div`
         z-index:  9 !important;
         cursor: pointer;
         border: 0px solid rgb(255, 0, 0);
-        background: #51C6CF;
+        background: #f67d2e;
         display: flex;
         height: 27px;
         line-height: 27px;
@@ -247,7 +247,7 @@ const Container = styled.div`
    
         b{
             border: 6px solid transparent;
-            border-top-color: #51C6CF;
+            border-top-color: #f67d2e;
             border-top-width: 8px;
             display: block;
             width: 0;
@@ -270,7 +270,7 @@ const houseMarkerStyle = {
 };
 const regionStyle = {
     zIndex: 2,
-    background: "#51C6CF",
+    background: "#f67d2e",
     boxShadow: "0 0 8px 0 rgba(0, 0, 0, 0.10)",
     width: "94px",
     height:" 94px",

@@ -547,7 +547,7 @@ const OptionSpan = styled.span`
              padding: 0 5px; 
              user-select: none;
              transition: color 0.3s;
-             &:hover{  color: #51C6CF; }`
+             &:hover{  color: #f67d2e; }`
     :
     `
             user-select: none;
@@ -556,7 +556,7 @@ const OptionSpan = styled.span`
             padding: 0 5px;
             border-radius: 5px;
             color: ${disabled ? 'rgba(0,0,0,.25)' : '#FFFFFF'};
-            background: ${disabled ? '#f5f5f5' : '#51C6CF'};
+            background: ${disabled ? '#f5f5f5' : '#f67d2e'};
             transition: background 0.3s;
             ${
     !disabled && `&:hover{  background: #6FCFCF; }`

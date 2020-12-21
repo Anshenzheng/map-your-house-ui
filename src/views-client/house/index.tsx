@@ -158,7 +158,7 @@ const RightInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     .price{
-        color: #51c6cf;
+        color: #f67d2e;
         margin-top: 10px;
         font-size: 28px;
         display: flex;
