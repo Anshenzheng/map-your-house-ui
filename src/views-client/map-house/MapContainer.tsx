@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BaiduMapConfig from "@/config/baidu-map-config";
 // @ts-ignore
 import BMap from 'BMap';
-import {useSelector} from 'react-redux'
+import {RootStateOrAny, useSelector} from 'react-redux'
 import HouseApi from "@apis/house";
 import {message} from "antd";
 import LocationPng from "../../assets/img/location.png";
@@ -19,7 +19,7 @@ let regionLabels:any = [];
 const MapContainer = ({onBoundsChange, childRef, houseList}) => {
 
 
-    const city = useSelector(state => state.common.city);
+    const city = useSelector((state:RootStateOrAny) => state.common.city);
 
     const [locationPng, setLocationPng] = useState();
 
@@ -30,7 +30,7 @@ const MapContainer = ({onBoundsChange, childRef, houseList}) => {
             map = new BMap.Map("map-search-house", {enableMapClick:false, minZoom: 11,maxZoom: 18}); // 创建Map实例
             map.setCurrentCity(city.cnName);
             map.enableScrollWheelZoom(true);
-            map.centerAndZoom(new BMap.Point(city.baiduMapLng, city.baiduMapLat), 12);  // 初始化地图,设置中心点坐标和地图级别
+            map.centerAndZoom(new BMap.Point(city.baiduMapLng, city.baiduMapLat), 11);  // 初始化地图,设置中心点坐标和地图级别
             getAggregationRegions(city.enName);
             map.addEventListener("dragend", handleBoundsChange);
             map.addEventListener("zoomend", handleBoundsChange);
@@ -206,6 +206,13 @@ const Container = styled.div`
     .map-search-house{
         height: 100%;
     }
+      .BMap_cpyCtrl.BMap_noprint.anchorBL{
+        display:none;
+     }
+     
+     .anchorBL a{
+        display:none;
+     }
     .region-title{
         margin-top: 25px;
         height: 26px;
@@ -281,5 +288,10 @@ const regionStyle = {
     color: "#FFFFFF",
     margin: "-50px 0 0 -50px",
     cursor: "pointer",
+    opacity:"0.8"
+
+
 };
+
+
 export default  React.memo(MapContainer);
