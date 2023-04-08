@@ -15,8 +15,8 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
 
     return (
         <Container>
-            <FilterItemComponent value={searchParams.houseType} name={rentWayItems.find(item => item.value === searchParams.houseType)?.title || "房屋类型"}
-                                 items={rentWayItems} onSelect={(params) =>onChange({houseType: params.key}) }
+            <FilterItemComponent value={searchParams.houseType} name={houseTypeItems.find(item => item.value === searchParams.houseType)?.title || "房屋类型"}
+                                 items={houseTypeItems} onSelect={(params) =>onChange({houseType: params.key}) }
             />
             <FilterItemComponent value={searchParams.priceRange} name={priceItems.find(item => item.value === searchParams.priceRange)?.title || "价格"} items={priceItems} onSelect={(params) => {
                 const priceArr = params.key.split("-");
@@ -36,8 +36,8 @@ const MapSearchFilter = ({searchParams, onChange, onClearAll}) => {
         </Container>
     )
 };
-// 合租方式下拉项
-const rentWayItems = [{value: "null", title: "不限"}, {value: "0", title: "二手房"}, {value: "1", title: "新房"}];
+// 房屋类型下拉项
+const houseTypeItems = [{value: "null", title: "不限"}, {value: "0", title: "二手房"}, {value: "1", title: "新房"}];
 const priceItems  = [{value: "null", title: "不限"},
     {value: "0-3000000", title: "300万元以下"},
     {value: "3000000-4000000", title: "300-400万元"},
@@ -46,7 +46,7 @@ const priceItems  = [{value: "null", title: "不限"},
     {value: "8000000-10000000", title: "800-1000万元"},
     {value: "10000000-", title: "1000万元以上"},
 ];
-const  directionItems = [{value: "null", title: "不限"}, {value: "2", title: "南"},  {value: "4", title: "北"}, {value: "1", title: "东"},  {value: "3", title: "西"},];
+const  directionItems = [{value: "null", title: "不限"}, {value: "2", title: "南"},  {value: "4", title: "北"}, {value: "1", title: "东"},  {value: "3", title: "西"}, {value: 5, title: "南北"}, {value: 6, title: "东西"}];
 const houseTagsOption = HouseTagList.map((item: any) => ({label: item, value: item}));
 const rentTypeOptions = [{label: "年租", value: 1}, {label: "可短租", value: 2}];
 const houseStatusOptions = [{label: "可立即入住", value: 1}, {label: "可预定", value: 2}];

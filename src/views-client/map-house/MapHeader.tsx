@@ -1,13 +1,13 @@
 import React, {useCallback, useEffect, useState} from "react";
 import styled, {createGlobalStyle} from "styled-components";
 import {Link} from "react-router-dom";
-import Logo from "@assets/img/logo178-28.png"
+import Logo from "@assets/img/logo290-127.png"
 import {AutoComplete, Input, message, Select} from "antd";
 import LoginRegisterBtn from "@components/LogoRegisterBtn";
 import {SearchOutlined} from "@ant-design/icons/lib";
 import ArrowRightBottomPng from "@assets/img/arrow-right-bottom.png";
 import SupportCityDropMenu from "@components/SupportCityDropMenu";
-import {useSelector} from 'react-redux'
+import {RootStateOrAny, useSelector} from 'react-redux'
 import BaiduApi from "@apis/baidu";
 import { debounce } from "debounce";
 
@@ -17,7 +17,7 @@ const { Option } = Select;
  */
 const MapHeader = ({value, onSelect, onChange}) => {
 
-    const city = useSelector(state => state.common.city);
+    const city = useSelector((state:RootStateOrAny) => state.common.city);
 
     const [addressHintList, setAddressHintList] = useState([]);
 
@@ -68,6 +68,7 @@ const MapHeader = ({value, onSelect, onChange}) => {
                               dropdownStyle={{padding: 0}}
                               onSearch={(value) => debounceSearchKeyword(value, city.cnName)}
                               onChange={(value) => {
+                                  //@ts-ignore
                                   setKeyword(value);
                                   onChange(value);
                               }}
@@ -129,16 +130,16 @@ const Container = styled.div`
     background: #fff;
     display: flex;
     .logo{
-        padding: 21px 0px;
+        padding: 10px 0px;
         margin-left: 32px;
         position: relative;
         z-index: 2;
         position: relative;
-        width: 178px;
+        // width: 178px;
         height: 70px;
         img{
-            width: 178px;
-            height: 28px;
+            //width: 100%;
+            height: 50px;
         }
     }
     .city-box{

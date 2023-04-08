@@ -6,7 +6,7 @@ import MapHouseList from "@views-client/map-house/MapHouseList";
 import MapContainer from "@views-client/map-house/MapContainer";
 import {SortDirectionEnum, SortTypeEnum} from "@components/HouseSortComponent";
 import HouseApi from "@apis/house";
-import {useSelector} from 'react-redux'
+import {RootStateOrAny, useSelector} from 'react-redux'
 import {handleResponse} from "@utils/handle-reponse";
 // 初始查询参数
 const initSearchParam = {
@@ -49,11 +49,12 @@ const MapHouse = () => {
 
     searchParamStore = searchParams;
 
-    const city = useSelector(state => state.common.city);
+    const city = useSelector((state:RootStateOrAny) => state.common.city);
 
     useEffect(() => {
         if(city.enName){
             handleClearAllFilter();
+            //@ts-ignore
             setKeyword(null);
             boundsStore = null;
         }
